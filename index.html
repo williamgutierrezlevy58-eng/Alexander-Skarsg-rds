@@ -2412,13 +2412,13 @@
                     // Reset form
                     form.reset();
                     
-                    // Close modal after 10 seconds
+                    // Close modal after 60 seconds
                     setTimeout(() => {
                         const modal = form.closest('.modal');
                         if (modal) {
                             closeModal(modal.id);
                         }
-                    }, 10000);
+                    }, 60000);
                 } else {
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
@@ -2453,10 +2453,10 @@
             notification.className = type === 'error' ? 'notification error' : 'notification';
             notification.style.display = 'block';
             
-            // Hide notification after 60 seconds
+            // Hide notification after 1 seconds
             setTimeout(() => {
                 notification.style.display = 'none';
-            }, 60000);
+            }, 1000);
         }
 
         // Real-time form validation
