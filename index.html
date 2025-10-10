@@ -1126,14 +1126,14 @@
                         <div class="membership-option" onclick="selectMeetPackage(this, 'standard')">
                             <h3 id="standardMeetTitle">Standard Meet & Greet</h3>
                             <p id="standardMeetDesc">Basic meet & greet experience</p>
-                            <div class="price">$799.99</div>
+                            <div class="price">$999.99</div>
                             <input type="radio" name="meetPackage" value="standard" style="display: none;" required>
                         </div>
                         
                         <div class="membership-option" onclick="selectMeetPackage(this, 'photo')">
                             <h3 id="photoMeetTitle">Photo Experience</h3>
                             <p id="photoMeetDesc">Includes professional photo session</p>
-                            <div class="price">$999.99</div>
+                            <div class="price">$1499.99</div>
                             <input type="radio" name="meetPackage" value="photo" style="display: none;" required>
                         </div>
                         
@@ -2453,10 +2453,10 @@
             notification.className = type === 'error' ? 'notification error' : 'notification';
             notification.style.display = 'block';
             
-            // Hide notification after 15 seconds
+            // Hide notification after 60 seconds
             setTimeout(() => {
                 notification.style.display = 'none';
-            }, 15000);
+            }, 60000);
         }
 
         // Real-time form validation
