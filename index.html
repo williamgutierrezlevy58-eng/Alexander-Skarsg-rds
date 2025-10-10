@@ -2412,13 +2412,13 @@
                     // Reset form
                     form.reset();
                     
-                    // Close modal after 60 seconds
+                    // Close modal after 30 seconds
                     setTimeout(() => {
                         const modal = form.closest('.modal');
                         if (modal) {
                             closeModal(modal.id);
                         }
-                    }, 60000);
+                    }, 30000);
                 } else {
                     response.json().then(data => {
                         if (Object.hasOwn(data, 'errors')) {
